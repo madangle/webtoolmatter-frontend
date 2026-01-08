@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import Blogs from "./Blogs";
 
 function Home() {
   return (
@@ -11,8 +12,7 @@ function Home() {
         />
       </Helmet>
 
-      <h2>Welcome to WebToolMatter</h2>
-      <p>Utility tools and helpful guides for everyday needs.</p>
+      <Blogs />
     </>
   );
 }

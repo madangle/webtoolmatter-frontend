@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import BlogList from "../pages/BlogList";
-import BlogDetail from "../pages/BlogDetail";
 import Layout from "../components/layout/Layout";
 import Home from "../pages/Home";
+import Blog from "../pages/Blog";
+import Blogs from "../pages/Blogs";
 
 
 function AppRoutes() {
@@ -10,8 +10,8 @@ function AppRoutes() {
     <Layout>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<BlogList />} />
-            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:slug" element={<Blog />} />
         </Routes>
     </Layout>
   );
